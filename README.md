@@ -15,6 +15,11 @@ An API built on top of [ClassPro](https://github.com/rahuletto/classpro) that fe
 
 ## Screenshots
 
+![image](https://github.com/user-attachments/assets/f255c79e-011c-417f-8d17-4b04be1488f5)
+<img width="747" alt="image" src="https://github.com/user-attachments/assets/44393e93-51d9-43e2-abd9-0ec1ef379e0a">
+<img width="397" alt="image" src="https://github.com/user-attachments/assets/526a266b-414f-4c7c-9364-3fc09da0f3ba">
+
+
 
 
 ## Configuration
