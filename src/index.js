@@ -73,7 +73,7 @@ app.get("/academia", async (req, res) => {
   }
 });
 
-cron.schedule("*/10 * * * *", async () => {
+cron.schedule("0 5 * * *", async () => {
   console.log("Triggering Academia route via cron job...");
 
   try {
