@@ -6,11 +6,11 @@
 An API built on top of [ClassPro](https://github.com/rahuletto/classpro) that fetches the current day order and adds your class hours into your Google Calendar as events using the Google Calendar API.
 
 
-- **Using Slack with Google Calendar**: Update your slack status based on your class hours using the google 
+- **Using Slack with Google Calendar**: Update your slack status based on your class hours using the google calendar integration in slack 
 
 - **Easily Share Class Schedule**: Quickly share your class hours with others in a clean, accessible format.
   
-- **Calendar Event Automation**: Trigger Alarms and other routines/automations based on class hours using [Home Assistant](https://www.home-assistant.io/integrations/google/)
+- **Calendar Event Automation**: Trigger Alarms and other routines/automations based on your class hours using [Home Assistant](https://www.home-assistant.io/integrations/google/)
 
 
 ## Screenshots
