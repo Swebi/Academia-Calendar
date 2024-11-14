@@ -38,10 +38,17 @@ app.get("/auth/redirect", async (req, res) => {
 app.get("/academia", async (req, res) => {
   try {
     const response = await fetch(process.env.ACADEMIA_PRO_URL);
-    if (response.status == 200) {
-      console.log(response);
+    if (response.status === 200) {
       const data = await response.json();
       const dayOrder = data.today?.dayOrder;
+
+      if (dayOrder === "-") {
+        return res.status(200).json({
+          success: true,
+          message: "No lectures scheduled for today.",
+        });
+      }
+
       const lectures = timetable[dayOrder];
 
       await Promise.all(
@@ -61,9 +68,11 @@ app.get("/academia", async (req, res) => {
         })
       );
 
-      res
-        .status(200)
-        .json({ success: true, data: data.today, lectures: lectures });
+      res.status(200).json({
+        success: true,
+        data: data.today,
+        lectures: lectures,
+      });
     } else {
       throw new Error("Error with Academia");
     }
